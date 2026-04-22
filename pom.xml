@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.gateway.project</groupId>
-    <artifactId>gateway-pro</artifactId>
+    <artifactId>gateway-assignement</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gateway-pro</name>
     <description>Cleaned up Spring Cloud Gateway project</description>

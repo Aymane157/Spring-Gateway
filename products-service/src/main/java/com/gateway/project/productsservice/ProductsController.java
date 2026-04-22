@@ -1,5 +1,6 @@
 package com.gateway.project.productsservice;
 
+import com.gateway.project.productsservice.model.Product;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,15 +12,12 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductsController {
 
-
-    public record Product(Long id, String name, BigDecimal price) {}
-
     @GetMapping
     public List<Product> getProducts() {
         return List.of(
-                new Product(101L, "Laptop Pro", new BigDecimal("1299.99")),
-                new Product(102L, "Souris Sans Fil", new BigDecimal("29.90")),
-                new Product(103L, "Clavier Meca", new BigDecimal("89.50"))
+                new Product(101L, "Asus Pro", new BigDecimal("9000dh"),false),
+                new Product(102L, "Souris", new BigDecimal("30dh"),true),
+                new Product(103L, "Casque Gamer", new BigDecimal("100dh"),false)
         );
     }
 }
