@@ -15,9 +15,9 @@ public class ProductsController {
     @GetMapping
     public List<Product> getProducts() {
         return List.of(
-                new Product(101L, "Asus Pro", new BigDecimal("9000dh"),false),
-                new Product(102L, "Souris", new BigDecimal("30dh"),true),
-                new Product(103L, "Casque Gamer", new BigDecimal("100dh"),false)
+                new Product(101L, "Asus Pro", new BigDecimal("9000"),false),
+                new Product(102L, "Souris", new BigDecimal("30"),true),
+                new Product(103L, "Casque Gamer", new BigDecimal("100"),false)
         );
     }
 }
